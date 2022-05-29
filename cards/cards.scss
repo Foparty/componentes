@@ -1,0 +1,57 @@
+@import 'variables';
+
+body {
+  background: $bg-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.container {
+  display: grid;
+  place-items: center;
+}
+.card {
+  background: $bg-color;
+  border: 1px solid $card-border;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  max-width: 30rem;
+  &-v {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &-reverse {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      img{
+        order: 2;}
+    }
+  }
+  &-h {
+
+    &-bottom {
+      img {
+        order: 2;
+      }
+
+    }
+  }
+  img {
+
+  }
+  .card-body {
+    h4 {
+      color: $heading-secondary;
+      font-size: .9em;
+    }
+    h5 {
+      color: $heading-primary;
+      font-size: .7em;
+    }
+    p {
+      color: $main-txt;
+      font-size: .8em;
+    }
+  }
+}

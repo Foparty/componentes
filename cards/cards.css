@@ -1,0 +1,47 @@
+body {
+  background: #202023;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  background: #202023;
+  border: 1px solid #5F6267;
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  max-width: 30rem;
+}
+.card-v {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card-v-reverse {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.card-v-reverse img {
+  order: 2;
+}
+.card-h-bottom img {
+  order: 2;
+}
+.card .card-body h4 {
+  color: #959A9F;
+  font-size: 0.9em;
+}
+.card .card-body h5 {
+  color: #E7E9EC;
+  font-size: 0.7em;
+}
+.card .card-body p {
+  color: #9A9FA5;
+  font-size: 0.8em;
+}
+
+/*# sourceMappingURL=cards.css.map */
